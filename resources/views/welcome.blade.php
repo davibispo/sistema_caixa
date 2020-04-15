@@ -16,7 +16,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color:pink;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -46,6 +46,9 @@
 
             .content {
                 text-align: center;
+                background-color:#fff; 
+                padding:10%; 
+                border-radius:10%;
             }
 
             .title {
@@ -59,7 +62,11 @@
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
-                text-transform: uppercase;
+                text-transform: uppercase;    
+            }
+
+            .links > a:hover {
+                text-decoration: underline;
             }
 
             .m-b-md {
@@ -82,19 +89,26 @@
                     @endauth
                 </div>
             @endif
+            <div class="container" >
+                <div class="row">    
+                    <div class="content col-sm-6">
+                        <div class="m-b-md">
+                            <h3>Módulo de Venda</h3>
+                            <div class="form-group">
+                                <input type="text" name="#" class="form-control" autofocus>
+                                <input type="submit" class="form-control" value="Registrar">
+                            </div>
+                        </div>
 
-            <div class="content" style="background-color:white; padding:10%; border-radius:10%;">
-                <div class="m-b-md">
-                    <h3>Módulo de Venda</h3>
-                    <div class="form-group">
-                        <input type="text" name="#" class="form-control" autofocus>
-                        <input type="submit" class="form-control" value="Registrar">
+                        <div class="links">
+                            <a href="https://laravel.com/docs">Produtos</a>
+                            <a href="https://laracasts.com">Relatórios</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Produtos</a>
-                    <a href="https://laracasts.com">Relatórios</a>
+                    <div class="content col-sm-5" style="margin-left:10px; overflow:auto; height: 400px; padding:3%">
+                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                    </div>
                 </div>
             </div>
         </div>
